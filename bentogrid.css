@@ -1,0 +1,170 @@
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 150px);
+    margin: 0 auto;
+    max-width: 1680px;
+    max-height: 850px;
+    padding: 20px;
+    gap: 20px;
+    background-color: #eddffe
+}
+
+.parent div {
+    background-color: #e4fffb;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* 確保圖片不會超出卡片邊框 */
+    /* border: 3px solid #bbb; */
+}
+
+.parent img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; / 讓圖片按比例填滿 div，不會變形 /
+    border-radius: 10px;
+    /transition: transform 0.3s ease, box-shadow 0.3s ease; */
+}
+   
+/* 1 */
+.parent .div1{
+    background-color: #FFE7D1;
+    
+}
+.div1 {    
+    grid-column: span 3 / span 3;
+    grid-row: span 3 / span 3;
+
+    text-align: center;
+    font-family: "Microsoft JhengHei", sans-serif; /* 或您想用的字體 */
+    font-size: 96px;   /* 或 24px 等，依需求調整 */
+    color: #333;         /* 字體顏色 */
+    font-weight: bold;   /* 粗體、正常、300、700 等都可 */
+    /* 也可以設定行高 line-height: 1.4; 以增進可讀性 */
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* 建議加點陰影，滑過時更顯眼 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.div1:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+/* 4 */
+.div4 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 4;
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* 建議加點陰影，滑過時更顯眼 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.div4:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Work */
+.parent .div_work{
+    background-color: #FEEBE7;
+}
+.div_work {
+    grid-row: span 2 / span 2;
+    grid-column-start: 5;
+    grid-row-start: 1;
+
+    text-align: center;
+    font-family: "Microsoft JhengHei", sans-serif; /* 或您想用的字體 */
+    font-size: 60px;   /* 或 24px 等，依需求調整 */
+    color: #333;         /* 字體顏色 */
+    font-weight: bold;   /* 粗體、正常、300、700 等都可 */
+    /* 也可以設定行高 line-height: 1.4; 以增進可讀性 */
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* 建議加點陰影，滑過時更顯眼 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.div_work:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+/* About */
+.parent .div_about{
+    background-color: #FFF4C8
+}
+.div_about {
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 1;
+
+    text-align: center;
+    font-family: "Microsoft JhengHei", sans-serif; /* 或您想用的字體 */
+    font-size: 60px;   /* 或 24px 等，依需求調整 */
+    color: #333;         /* 字體顏色 */
+    font-weight: bold;   /* 粗體、正常、300、700 等都可 */
+    /* 也可以設定行高 line-height: 1.4; 以增進可讀性 */
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* 建議加點陰影，滑過時更顯眼 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.div_about:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+/* 7 */
+.div7 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 4;
+    grid-row-start: 3;
+
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* 建議加點陰影，滑過時更顯眼 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.div7:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+/* 8 */
+.div8 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-row-start: 4;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* 建議加點陰影，滑過時更顯眼 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.div8:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* */
+.no-underline {
+    text-decoration: none;
+    color: inherit;
+}
+
+.no-underline:hover {
+    text-decoration: none; /* 或想要的 hover 效果 */
+    color: inherit;
+}

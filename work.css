@@ -1,0 +1,170 @@
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 150px);
+    margin: 0 auto;
+    max-width: 1680px;
+    max-height: 850px;
+    padding: 20px;
+    gap: 20px;
+    background-color: #eddffe
+}
+
+.parent div {
+    background-color: #e4fffb;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* 確保圖片不會超出卡片邊框 */
+}
+
+.parent img {
+    /* width: 100%;
+    height: 100%;
+    object-fit: cover; */
+    border-radius: 10px;
+    /transition: transform 0.3s ease, box-shadow 0.3s ease; */
+}
+
+.div1 {
+    grid-row: span 2 / span 2;
+
+    text-align: center;
+    font-family: "Microsoft JhengHei", sans-serif; /* 或您想用的字體 */
+    font-size: 48px;   /* 或 24px 等，依需求調整 */
+    color: #333;         /* 字體顏色 */
+    font-weight: bold;   /* 粗體、正常、300、700 等都可 */
+    /* 也可以設定行高 line-height: 1.4; 以增進可讀性 */
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* 建議加點陰影，滑過時更顯眼 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.div1:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.div2 {
+    grid-row: span 3 / span 3;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* 建議加點陰影，滑過時更顯眼 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.div2:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.work2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.div3 {
+    grid-row: span 3 / span 3;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* 建議加點陰影，滑過時更顯眼 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    
+}
+.div3:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.work3 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.div4 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* 建議加點陰影，滑過時更顯眼 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.div4:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.work4 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.div5 {
+    grid-row: span 3 / span 3;
+    grid-row-start: 3;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* 建議加點陰影，滑過時更顯眼 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.div5:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.work5 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.div6 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 4;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* 建議加點陰影，滑過時更顯眼 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.div6:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.work6 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.div7 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 4;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* 建議加點陰影，滑過時更顯眼 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.div7:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.work7 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+     
+
+.no-underline {
+    text-decoration: none;
+    color: inherit;
+}
+
+.no-underline:hover {
+    text-decoration: none;
+    color: inherit;
+}
